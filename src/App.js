@@ -7,6 +7,7 @@ import Time from "./components/Time/index.js";
 function App() {
   const [colaboradores, setColaboradores] = useState([]);
   const aoNovoColaboradorAdicionado = (colaborador) => {
+    debugger
     setColaboradores([...colaboradores, colaborador]);
   };
   const times = [

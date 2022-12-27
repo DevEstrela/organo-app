@@ -5,7 +5,8 @@ const ListSuspense = (props) => {
 
       <label>{props.label}</label>
 
-        <select onChange={event => props.aoAlterado(event.target.value)} required={props.obrigatorio} value={props.valor} >
+        <select onChange={event => props.aoAlterado(event.target.value)} required={props.obrigatorio} valor={props.valor} >
+          <option value=""> </option>
             {props.itens.map( (item) => <option key={item}>{item}</option> ) }
         </select>
 
