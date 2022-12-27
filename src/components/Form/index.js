@@ -19,10 +19,10 @@ const Form = (props) => {
       imagem: imagem,
       time: time,
     });
-    setNome('');
-    setCargo('');
-    setImagem('');
-    setTime('');
+    setNome("");
+    setCargo("");
+    setImagem("");
+    setTime("");
   };
   return (
     <section className="formulario">
@@ -52,12 +52,16 @@ const Form = (props) => {
         />
 
         <ListSuspense
+          obrigatorio={true}
           valor={time}
           aoAlterado={(valor) => setTime(valor)}
           label="Times"
           itens={props.times}
         />
-        <Button>Criar Card</Button>
+        <Button>
+          Criar Card
+        </Button>
+        
       </form>
     </section>
   );
